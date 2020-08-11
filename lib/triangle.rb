@@ -35,9 +35,6 @@ class Triangle
 end
 
 class TriangleError < StandardError
-def message 
-  puts "There is an error."
-end
 end
 
 
