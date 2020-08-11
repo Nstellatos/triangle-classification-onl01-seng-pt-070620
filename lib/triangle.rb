@@ -20,9 +20,9 @@ end
   [size_1,size_2,size_3].each {|s| valid_triangle << false if s <= 0 }
     raise TriangleError if valid_triangle.include?(false)
   end
-end
 
 class TriangleError < StandardError
   
   
+end
 end
