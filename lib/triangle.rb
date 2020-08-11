@@ -14,6 +14,9 @@ if size_1 == size_2 && size_2 == size_3
 else
   :scalene
 end
+else 
+  raise TriangleError
+end
 end
 end 
 
