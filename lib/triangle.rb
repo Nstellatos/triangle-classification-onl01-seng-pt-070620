@@ -21,12 +21,12 @@ end
 end 
 
 
-# # def valid?
-# #   valid_triangle = [(size_1 + size_2 > size_3), (size_1 + size_3 > size_2), (size_2 + size_3 > size_1)]
-# #   [size_1,size_2,size_3].each {|s| valid_triangle << false if s <= 0 }
-# #     raise TriangleError if valid_triangle.include?(false)
-# #   end
-# # end
+def valid?
+  valid_triangle = [(size_1 + size_2 > size_3), (size_1 + size_3 > size_2), (size_2 + size_3 > size_1)]
+  [size_1,size_2,size_3].each {|s| valid_triangle << false if s <= 0 }
+    raise TriangleError if valid_triangle.include?(false)
+  end
+end
 
 class TriangleError < StandardError
   
